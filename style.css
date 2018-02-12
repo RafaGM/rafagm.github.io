@@ -1,0 +1,289 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  width: 100%;
+  min-width: 1200px;
+  max-width: 1500px;
+  min-height: 600px;
+}
+body {
+  font-family: Verdana, Geneva, sans-serif; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  background-image: url("images/noise.jpg");  
+  align-items: center;
+  //border: 3px solid green;
+}
+
+#clientes{
+  display: flex;
+  justify-content: center;
+}
+#contenidoPrincipal {
+  display: inherit;
+  width: 100%;
+  align-items: inherit;
+  flex-direction: inherit;
+  overflow-y: auto;
+}
+
+header {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  //border: 3px solid black;
+}
+#logo{  
+  width: 100%;
+}
+nav { 
+  display: flex;
+  margin-top: 0px;
+  justify-content: space-around;
+  width: 60%;
+  //border: 3px solid blue;
+}
+aside {
+  width: 20%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  //border: 3px solid green;
+  justify-content: flex-start;
+
+}
+#menuItemsCobrosPagos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.btnFeo:not(:last-child) {
+  margin-right: 10px;
+}
+form {
+  width: 100%;
+}
+
+#cobrosPagos {
+  margin-top: 10px;
+}
+#cobrosPagos, #formCobrosPagos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#imagenGrafico1, #imagenGrafico2 {  
+  width: 100%;
+  height: 100%;
+  //border: 3px solid green;
+
+}
+section {
+  display: flex;
+  width: 60%;
+  margin-top: 20px;
+  //border: 3px solid red;
+  overflow-y: auto;
+  justify-content: center;
+}
+#grafico1, #grafico2 {
+  width: 40%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grafico1 {
+  //border: 3px solid blue;
+}
+
+#grafico2 {
+  //border: 3px solid black;
+}
+
+
+.btnMenu, .btnCliente {
+  width: 110px;
+  height: 35px;
+  margin-right: 23px;
+  transition-duration: 0.4s;
+  background-color: white;    
+  border-left: 2px solid #008CBA; 
+  border-right: 2px solid #008CBA; 
+  border-bottom: 2px solid #008CBA;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btnMenu:hover {   
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+}
+
+.btnCliente:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.btnMenu, .btnCliente{
+  border-top: 2px solid #008CBA; 
+}
+
+.btnNav, .btnActivo{
+  width: 110px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+  background-color: #3B83BD;
+  color: white;
+  border: 2px solid #3B83BD;
+}
+
+.btnNav:hover, .btnActivo {
+  background-color: white;
+  color: black;
+}
+
+
+//diagrama barras
+.diagramaBarras {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  //border: 3px solid black;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.barra {
+  border: 2px solid rgb(18, 73, 164);
+}
+h3 {
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+    font-size: 26px;
+  letter-spacing: 2px;
+  margin:0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+article {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  //border: 3px solid maroon;
+}
+
+#contenidoEmpresa, #contenidoClientes, #contenidoFacturacion, #contenidoCobrosPagos{
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-top: 20px;
+  //border: 2px solid black;
+}
+
+#contenidoFacturacion {
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup lh {
+  color: black  ;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  float: right;
+  bottom: 0px;
+  padding-right: 5px;
+  //border: 3px solid blue;
+  z-index: 3;
+}
+#btnAddProduct {
+  width: 20%;
+  position
+}
+
+#fotr {
+  background-color: rgba(54, 162, 235, 0.4);
+  border: 2px solid grey;
+  border-radius: 12px;
+  font-size: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  bottom: 0px;
+}
+
+
+#facturacion {
+  width: 100%;
+  display: flex;
+  //border: 2px solid red;
+  margin-top: 35px;
+}
+
+#divBtnAddEmpresa{
+  width: 150px;
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+#divBtnAddProducto{
+  width: 150px;
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+#tablaFact {
+  width: 60%;
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 50%;
+}
+
+#tablaProductos {
+  margin-top: 15px;
+}
+
+#tablaTotal {
+  margin-top: 10px;
+}
+
+#tablaTotal tr th {
+  width: 50%;
+}
+
+#clienteInputNombre:valid, #clienteInputTelefono:valid {
+  border: 1.1px solid green;
+}     
+
+#clienteInputNombre:invalid, #clienteInputTelefono:invalid {
+  border: 1.1px solid red;
+}

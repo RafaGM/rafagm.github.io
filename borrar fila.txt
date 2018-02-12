@@ -1,0 +1,29 @@
+function deleteRow(btn) {
+  var row = btn.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+And the HTML with a little difference:
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+<table id="dsTable">
+  <tbody>
+    <tr>
+      <td>Relationship Type</td>
+      <td>Date of Birth</td>
+      <td>Gender</td>
+    </tr>
+    <tr>
+      <td>Spouse</td>
+      <td>1980-22-03</td>
+      <td>female</td>
+      <td><input type="button" value="Add" onclick="add()"/></td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"/></td>
+    </tr>
+    <tr>
+      <td>Child</td>
+      <td>2008-23-06</td>
+      <td>female</td>
+      <td><input type="button" value="Add" onclick="add()"/></td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"/></td>
+    </tr>
+  </tbody>
+</table>

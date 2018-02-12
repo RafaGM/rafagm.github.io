@@ -1,0 +1,124 @@
+			
+			<--MENU FACTURA
+		
+			<aside id="menuFactura">
+				<button class="btnMenu" disabled="">Subir factura</button>
+				<button class="btnMenu">Crear factura</button>
+				<button class="btnMenu">Modificar factura</button>
+				<button class="btnMenu">Borrar factura</button>
+			</aside>
+			-->
+<!--MI EMPRESA
+<form class="needs-validation" novalidate>
+		  <div class="form-row">
+		    <div class="col-md-4 mb-3">
+		      <label for="nombreEmpresa">Nombre Empresa</label>
+		      <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre Empresa" value="" required>
+		      <div class="valid-tooltip">
+		        Looks good!
+		      </div>
+		    </div>
+		    <div class="col-md-4 mb-3">
+		      <label for="telefono">Teléfono</label>
+		      <input type="text" class="form-control" id="telefono" placeholder="933333333" value="" required>
+		      <div class="valid-tooltip">
+		        Looks good!
+		      </div>
+		    </div>
+		    <div class="col-md-4 mb-3">
+		      <label for="Ciudad">Ciudad</label>
+		        <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-row">
+		    <div class="col-md-6 mb-3">
+		      <label for="calle">Calle/Av</label>
+		      <input type="text" class="form-control" id="calle" placeholder="Calle/Av" required>
+		      <div class="invalid-tooltip">
+		        Por favor introduzcauna calle válida.
+		      </div>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="numero">Numero</label>
+		      <input type="text" class="form-control" id="numero" placeholder="Numero" required>
+		      <div class="invalid-tooltip">
+		        Por favor introduzca un numero válido.
+		      </div>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="codigoPostal">Codigo Postal</label>
+		      <input type="text" class="form-control" id="codigoPostal" placeholder="CP" required>
+		      <div class="invalid-tooltip"> 
+		      Por favor introduzca un CP válido
+		      </div>
+		    </div>
+		  </div>
+		  <button class="btn btn-primary" onclick='guardarEmpresa(document.getElementById("nombreEmpresa").value + " " + document.getElementById("telefono").value + " " + document.getElementById("ciudad").value + " " + document.getElementById("calle").value + " " + document.getElementById("numero").value + " " + document.getElementById("codigoPostal").value)' type="button">Modificar</button>
+		</form>
+		-->
+		<!--Clientes
+			<div id="clientes">
+			<div class="popup">
+				<ul id="listaClientes">
+					<lh>Nombre Apellidos / Teléfono</lh>
+					<li>
+						<span>
+							test
+							<button onClick='borrarFila(this)'>x</button>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<aside >
+			<script>cargarClientes();</script>
+			<button class="btnCliente" onclick='addCliente(document.getElementById("clienteInputNombre").value, document.getElementById("clienteInputTelefono").value)'>Añadir Cliente</button>
+			<div id="añadirCliente">
+				<input id="clienteInputNombre" value="" type="text" placeholder="Nombre Apellidos">
+				<input id="clienteInputTelefono" value="" type="text" placeholder="Telefono">
+			</div>
+		</aside>	
+		-->
+
+
+		<-- facturacion
+
+	<div id="facturacion">
+			<div id="factura">
+				<form>
+					 <div class="form-row">
+					    <div class="col">
+					    	<label for="mov">Tipo Movimiento</label>
+					     	<select class="form-control" id="mov">
+						    	<option>Gasto</option>
+						     	<option>Ingreso</option>
+						   </select>
+					    </div>
+					    <div class="col">
+					    	<label for="unidades">Unidades</label>
+					     	<input id="unidades" type="text" class="form-control" placeholder="Unidades">
+					    </div>
+					    <div class="col">
+					    	<label for="precio">Precio/Unidad</label>
+					     	<input id="precio" type="text" class="form-control" placeholder="Precio/Unidad">
+					    </div>
+					    <div class="col">
+					    	<label for="mes">Mes</label>
+					     	<select class="form-control" id="mes">
+						    	<option>Enero</option>
+						     	<option>Febrero</option>
+						     	<option>Marzo</option>
+						   </select>
+					    </div>
+					 </div>
+					 <div id="menuItemsFactura">
+					 	<button class="btnFeo" type="button" onclick='movimiento(document.getElementById("precio").value, document.getElementById("unidades").value, document.getElementById("mes").value, document.getElementById("mov").value)'>Finalizar Movimiento</button>
+					 </div>
+				</form>
+			</div>
+		</div>
+
+
+
+		-->
