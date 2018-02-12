@@ -28,7 +28,7 @@ $(window).on("load", function() {
 		validarEmpresa();
 	});
 	$("#btnAddCliente").on("click", function() {
-		addCliente(document.getElementById("clienteInputNombre").value, document.getElementById("clienteInputTelefono").value);
+		if (validarClientes()) addCliente(document.getElementById("clienteInputNombre").value, document.getElementById("clienteInputTelefono").value);
 	});
 	$("#btnValidarCobrosPagos").on("click", function() {
 		if(validarCobrosPagos()) movimiento(document.getElementById("precio").value, document.getElementById("unidades").value, document.getElementById("mes").value, document.getElementById("mov").value);
@@ -39,6 +39,7 @@ $(window).on("load", function() {
 	$("#btnBorrarFactura").on("click", function() {
 		borrarFactura();
 	});
+	
 
 
 
@@ -471,4 +472,16 @@ function validarCobrosPagos() {
 		return false;
 	}
 	return true;
+}
+
+function validarClientes() {
+	if (document.getElementById("clienteInputNombre").value == "") {
+		alert("Por favor, introduzca el nombre del cliente"); return false;
+	}
+	else if (document.getElementById("clienteInputTelefono").value == "") {
+		alert("Por favor, introduzca un número de cliente");
+		return false;
+	}
+	return true;
+
 }
